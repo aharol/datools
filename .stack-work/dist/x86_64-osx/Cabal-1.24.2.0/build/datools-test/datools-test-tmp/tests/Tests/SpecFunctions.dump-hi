@@ -1,0 +1,105 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-12 09:46:26.537637 UTC
+
+interface main@main:Tests.SpecFunctions 8002
+  interface hash: 72fd33fdac5cbbb290239197b3a7811d
+  ABI hash: 7ade9785fb08a8e58e18cbab6951efc0
+  export-list hash: 67f1411b2e62fed98b4423bb62d8a604
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: fa0cbef6fec2bc3df5b905fe2f412526
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tests.SpecFunctions.tests
+module dependencies:
+package dependencies: QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9
+                      ansi-terminal-0.6.2.3@ansi-terminal-0.6.2.3-4HPxin1iv6RAndS8lH3nzo
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-3GSHFrIr1fs45bsgKkZbLF
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 hostname-1.0@hostname-1.0-LHxcvBDHWay1RGMj1Uzenf
+                      integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa
+                      regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO
+                      template-haskell-2.11.1.0
+                      test-framework-0.8.1.1@test-framework-0.8.1.1-7YvscNBXXw5Lj2Ypw31c2N
+                      test-framework-quickcheck2-0.3.0.3@test-framework-quickcheck2-0.3.0.3-3BvhXUbVGHg7IQrkbhC6DS
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      tf-random-0.5@tf-random-0.5-BGjMgO8m67W8CHiEl15kZ7
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      xml-1.3.14@xml-1.3.14-AkPhBHkEQzoJK5yH4ot8y
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.Context
+         regex-posix-0.95.2@regex-posix-0.95.2-KQJt29lnRa45d6bFn9XkFO:Text.Regex.Posix.String
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9:Test.QuickCheck 5d7cb5b36e5406469ab226c41cc67877
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  test-framework-0.8.1.1@test-framework-0.8.1.1-7YvscNBXXw5Lj2Ypw31c2N:Test.Framework 86327bb3657a8abf964fa67a1d937456
+import  -/  test-framework-0.8.1.1@test-framework-0.8.1.1-7YvscNBXXw5Lj2Ypw31c2N:Test.Framework.Core bc57864a80cd6e4f26b44ee40cd8bd6e
+import  -/  test-framework-quickcheck2-0.3.0.3@test-framework-quickcheck2-0.3.0.3-3BvhXUbVGHg7IQrkbhC6DS:Test.Framework.Providers.QuickCheck2 758893b15fa93c9a371a130c5921c287
+f8732db00bfbb94024a98ed3459d199e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Tests.SpecFunctions.$trModule2
+                   Tests.SpecFunctions.$trModule1) -}
+1da0a1316fe3b9706845587bad5653cb
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tests.SpecFunctions"#) -}
+40df457dafe6036a0b79a51ea7e92faa
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+fb5987634d209258a564cab747ed6769
+  tests :: Test.Framework.Core.Test
+  {- Strictness: m2,
+     Unfolding: (Test.Framework.Core.TestGroup
+                   Tests.SpecFunctions.tests1
+                   (GHC.Types.[] @ Test.Framework.Core.Test)) -}
+129ac12fb4688e796db544e31afa0ebe
+  tests1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Special functions"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

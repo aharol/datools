@@ -1,0 +1,117 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-12 09:44:31.515734 UTC
+
+interface datools-0.1.0.0-Liiqe4AOY4e5U6XV99USYi:Numeric.SpecFunctions 8002
+  interface hash: a7cfcd2df48ea1ffe42307da8cff3764
+  ABI hash: d503e86bdfa1d44794811626d3b68cf8
+  export-list hash: 693818e9910d051ddd85e785d2bbb4a2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a3992c90b045e400bf8c8d951f1ef3ba
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Numeric.SpecFunctions.mean
+  Numeric.SpecFunctions.median
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+4baef7eab3ff609cc7a3c6a81bb1c14e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Numeric.SpecFunctions.$trModule2
+                   Numeric.SpecFunctions.$trModule1) -}
+5f6d3ca461e9dd2b839a27ccba203045
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Numeric.SpecFunctions"#) -}
+98c7ea87fce6f3df5ddbb757a67cf124
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "datools-0.1.0.0-Liiqe4AOY4e5U6XV99USYi"#) -}
+53f2d42f2a5db7b11b4577a8a99eaf4e
+  mean :: GHC.Real.Fractional a => [a] -> a
+  {- Arity: 1, Strictness: <L,U(1*U,C(C1(U)),A,A)>,
+     Unfolding: (\ @ a ($dFractional :: GHC.Real.Fractional a) ->
+                 let {
+                   $dNum :: GHC.Num.Num a = GHC.Real.$p1Fractional @ a $dFractional
+                 } in
+                 let {
+                   lvl12 :: a
+                   = GHC.Num.fromInteger @ a $dNum Numeric.SpecFunctions.mean3
+                 } in
+                 let {
+                   lvl13 :: a
+                   = GHC.Num.fromInteger @ a $dNum Numeric.SpecFunctions.mean2
+                 } in
+                 letrec {
+                   $wgo :: [a] -> (# a, a #)
+                     {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+                   = \ (w :: [a]) ->
+                     case w of wild {
+                       [] -> (# lvl12, lvl12 #)
+                       : x xs
+                       -> let {
+                            ds :: (a, a) = case $wgo xs of ww { (#,#) ww1 ww2 -> (ww1, ww2) }
+                          } in
+                          (# GHC.Num.+
+                               @ a
+                               $dNum
+                               (case ds of wild1 { (,) sum' count' -> sum' })
+                               x,
+                             GHC.Num.+
+                               @ a
+                               $dNum
+                               (case ds of wild1 { (,) sum' count' -> count' })
+                               lvl13 #) }
+                 } in
+                 \ (ds :: [a]) ->
+                 case ds of wild {
+                   [] -> Numeric.SpecFunctions.mean1 @ a
+                   : ipv ipv1
+                   -> let {
+                        ds1 :: (a, a)
+                        = case $wgo wild of ww { (#,#) ww1 ww2 -> (ww1, ww2) }
+                      } in
+                      GHC.Real./
+                        @ a
+                        $dFractional
+                        (case ds1 of wild1 { (,) sum count -> sum })
+                        (case ds1 of wild1 { (,) sum count -> count }) }) -}
+d8703cfb4ca1399a0166f02bceca8fcd
+  mean1 :: a
+  {- Strictness: x -}
+32ec3c79bb9ced326893d5bf47fac2e4
+  mean2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+186d0faa2d1458b609373b5ea0ba840c
+  mean3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+0da406cbe2b8170bc66df0e2f15d01b5
+  median :: (GHC.Real.Real a, GHC.Real.Fractional a) => [a] -> a
+  {- Arity: 3,
+     Strictness: <L,U(1*U,1*U(A,1*C(C1(U)),A,A,A,A,A,A),A)><L,1*U(A,1*C1(C1(U)),A,A)><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
