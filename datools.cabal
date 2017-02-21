@@ -1,7 +1,7 @@
 name:                datools
 version:             0.1.0.0
 synopsis:            Data analysis tools in Haskell
-description:         Please see READM.md
+description:         Please see README.md
 homepage:            https://github.com/githubuser/datools#readme
 license:             BSD3
 license-file:        LICENSE
@@ -16,25 +16,21 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Numeric.SpecFunctions
+  exposed-modules:     Numeric.Functions
   build-depends:       base >= 4.7 && < 5
-                     , hmatrix
+                     --, hmatrix
   default-language:    Haskell2010
 
 test-suite datools-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      tests
-  main-is:             tests.hs
-  other-modules:       Tests.SpecFunctions
+  main-is:             Spec.hs
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
   build-depends:       base
                      , datools
-                     , hmatrix
-                     , test-framework
-                     , test-framework-hunit
-                     , test-framework-quickcheck2
-                     , HUnit
+                     --, hmatrix
+                     , hspec
                      , QuickCheck
                      , Chart
                      --, Chart-cairo
