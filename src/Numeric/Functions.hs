@@ -8,11 +8,11 @@ import Data.List
 {-Generic mean-}
 mean :: (Real a, Fractional a) => [a] -> a
 mean []   = error "Average of an empty list"
-mean nums = let (sum, count) = go nums
+mean xs = let (sum, count) = go xs
             in sum / count
     where go [] = (0, 0)
-          go (x:xs) = let (sum', count') =  go xs
-                       in (sum' + x, count' + 1)
+          go (h:t) = let (sum', count') = go t
+                        in (sum' + h, count' + 1)
 
 {-Generic median-}
 median :: (Real a, Fractional a) => [a] -> a
