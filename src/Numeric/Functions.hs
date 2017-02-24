@@ -1,6 +1,8 @@
 module Numeric.Functions
     ( mean
-    , median) where
+    , median
+    , std
+    ) where
 
 import Data.List
 
@@ -15,7 +17,7 @@ mean xs = let (sum, count) = go xs
                         in (sum' + h, count' + 1)
 
 {-Generic median-}
-median :: (Real a, Fractional a) => [a] -> a
+median :: (Fractional a, Real a) => [a] -> a
 median [] = error "Median of an empty list"
 median xs = if oddInLength then
                 middleValue
@@ -27,3 +29,11 @@ median xs = if oddInLength then
         middle = floor $ (genericLength xs) / 2
         middleValue = genericIndex sortedList middle
         beforeMiddleValue = genericIndex sortedList (middle - 1)
+
+{-Standard deviation-}
+std :: (Floating a, Real a) => [a] -> a
+std [_] = error "Standard deviation of a population containing a single number is undefined"
+std xs = sqrt (sum [(x - mu)^2 | x <- xs]) / z
+    where
+        mu = mean xs
+        z = sqrt $ fromIntegral (genericLength xs - 1)
